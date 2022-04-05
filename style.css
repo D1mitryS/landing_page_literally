@@ -1,0 +1,258 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+a,
+label,
+button {
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 100%
+}
+
+cite {
+    display: block;
+    text-align: left;
+}
+
+.header {
+    height: 100vh;
+    background-color: aqua;
+    background-image: url(img/landing-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    display: flex;
+}
+
+.header-title {
+    font-size: 7em;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+    margin: auto;
+}
+
+.howto {
+    height: 30vh;
+    width: 85%;
+    display: flex;
+    margin: 10% auto 10%;
+    /* margin-bottom не работает почему? */
+    border-top: 0.2vh solid rgba(5, 85, 99, 0.822);
+    border-bottom: 0.2vh solid rgba(5, 85, 99, 0.822);
+
+}
+
+.howto-title {
+    font-size: 6vh;
+    line-height: 7vh;
+    margin: auto;
+}
+
+.content {
+    width: 85%;
+    margin: 10% auto 10%;
+    font-size: 0;
+    line-height: 0;
+
+    text-align: center;
+    /* !!! ALLIGNS LAST COLLUMNs TO THE CENTER !!!*/
+}
+
+
+.card {
+    width: 45%;
+    padding: 5%;
+    display: inline-block;
+    margin: 0 10% 10% 0;
+    box-shadow: 1vh 0 3vh rgba(5, 85, 99, 0.822);
+
+    vertical-align: top;
+    /* !!! ALIGNS COLUMN TO TOP !!!*/
+}
+
+.card.no-margin-right {
+    margin-right: 0;
+}
+
+.card.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.card-image {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.card-title {
+    font-size: 4vh;
+    line-height: 5vh;
+    margin-bottom: 5%;
+}
+
+.card-paragraph {
+    font-size: 3vh;
+    line-height: 4vh;
+}
+
+.wouldu {
+    display: flex;
+    margin: 0 auto 10%;
+    width: 85%;
+    height: 30vh;
+    border-top: 0.2vh solid rgba(5, 85, 99, 0.822);
+    border-bottom: 0.2vh solid rgba(5, 85, 99, 0.822);
+}
+
+.wouldu-title {
+    font-size: 6vh;
+    line-height: 7vh;
+    margin: auto;
+}
+
+.poll {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 0;
+    /* border-bottom: 0.2vh solid rgba(5, 85, 99, 0.822); */
+}
+
+
+.poll-list {
+    display: inline-block;
+    width: 30%;
+    margin-right: 5%;
+    padding: 5%;
+    vertical-align: top;
+    /* margin-bottom: 20%; */
+    box-shadow: 1vh 0 3vh rgba(5, 85, 99, 0.822);
+    font-size: 3vh;
+    line-height: 4vh;
+}
+
+.poll-list-1,
+.poll-list-2 {
+    display: none;
+}
+
+.poll-list-2 {
+    margin-right: 0;
+}
+
+.poll-question {
+    font-size: 4vh;
+    line-height: 5vh;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.poll-option {
+    display: block;
+    margin-bottom: 5%;
+}
+
+.submit-poll {
+    display: block;
+}
+
+.result-button {
+    display: none;
+    text-decoration: none;
+    color: #000;
+    border: 0.1vh solid #000;
+    padding: 1vh;
+    text-align: center;
+    border-radius: 0.5vh;
+    margin-top: 5%;
+}
+
+.result-button:hover {
+    background-color: rgba(5, 85, 99, 0.822);
+    color: #fff;
+}
+
+.ending {
+    margin: 10% 0;
+}
+
+.goodending,
+.badending {
+    display: none;
+    height: 100vh;
+    background-color: #eee;
+    background-image: url(img/good-ending.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.overlay {
+    display: flex;
+}
+
+.goodending-title,
+.badending-title {
+    font-size: 7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(10, 73, 192, 0.952);
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 100%;
+    text-align: center;
+}
+
+.badending {
+    background-image: url(img/bad-ending.jpg);
+}
+
+.badending-title {
+    color: rgba(146, 5, 5, 0.952);
+}
+
+.footer {
+    height: 25vh;
+    width: 85%;
+    margin: auto;
+    border-top: 0.2vh solid rgba(5, 85, 99, 0.822);
+    display: flex;
+}
+
+
+.footer-title {
+    color: #000;
+    font-size: 6vh;
+    line-height: 7vh;
+    margin: auto;
+}
+
+.retry {
+    font-size: 3vh;
+    line-height: 4vh;
+    color: #000;
+}
+
+.retry:hover {
+    color: rgba(5, 85, 99, 0.822);
+}

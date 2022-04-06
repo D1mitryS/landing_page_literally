@@ -5,7 +5,7 @@ let sumbitPoll0 = document.querySelector('.submit-poll-0');
 let pollValue0 = 0;
 
 for (let pollOption0 of pollOptions0) {
-    pollOption0.onchange = function () {
+    pollOption0.onclick = function () {
         pollValue0 = Number.parseInt(pollOption0.value, 10);
         console.log(`poll-value-0: ${pollValue0}`);
         sumbitPoll0.disabled = false;
@@ -40,7 +40,7 @@ let sumbitPoll1 = document.querySelector('.submit-poll-1');
 let pollValue1 = 0;
 
 for (let pollOption1 of pollOptions1) {
-    pollOption1.onchange = function () {
+    pollOption1.onclick = function () {
         pollValue1 = Number.parseInt(pollOption1.value, 10);
         console.log(`poll-value-1: ${pollValue1}`);
         sumbitPoll1.disabled = false;
@@ -74,7 +74,7 @@ let sumbitPoll2 = document.querySelector('.submit-poll-2');
 let pollValue2 = 0;
 
 for (let pollOption2 of pollOptions2) {
-    pollOption2.onchange = function () {
+    pollOption2.onclick = function () {
         pollValue2 = Number.parseInt(pollOption2.value, 10);
         console.log(`poll-value-2: ${pollValue2}`);
         sumbitPoll2.disabled = false;
@@ -102,6 +102,7 @@ sumbitPoll2.onclick = function () {
 let resultButton = document.querySelector('.result-button');
 let badEnding = document.querySelector('.badending');
 let goodEnding = document.querySelector('.goodending');
+let retry = document.querySelector('.retry');
 let pollResult = 0
 
 
@@ -115,9 +116,9 @@ resultButton.onclick = function () {
         badEnding.style.display = 'block';
         console.log('bad ending executes');
     }
+    retry.style.display = 'inline';
 }
 
-let retry = document.querySelector('.retry');
 
 retry.onclick = function () {
     for (let pollOption0 of pollOptions0) {
@@ -128,5 +129,6 @@ retry.onclick = function () {
     pollList2.style.display = 'none';
     pollList1.style.display = 'none';
     resultButton.style.display = 'none';
+    retry.style.display = 'none';
     console.log('retrying')
 }

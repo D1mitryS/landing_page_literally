@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 body,
@@ -18,12 +19,15 @@ button {
 
 * {
     box-sizing: border-box;
-    max-width: 100%
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    max-width: 100%
+    max-width: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 cite {

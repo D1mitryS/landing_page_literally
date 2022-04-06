@@ -198,7 +198,7 @@ cite {
 }
 
 .ending {
-    margin: 5% 0;
+    margin: 25vh 0 0;
 }
 
 .goodending,
@@ -210,6 +210,7 @@ cite {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-top: 0.2vh solid rgba(5, 85, 99, 0.822);
 }
 
 .overlay {
@@ -223,9 +224,9 @@ cite {
     text-transform: uppercase;
     color: rgba(10, 73, 192, 0.952);
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.658);
     width: 100%;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.658);
 }
 
 .badending {
@@ -238,7 +239,6 @@ cite {
 
 .footer {
     height: 25vh;
-    width: 85%;
     margin: auto;
     border-top: 0.2vh solid rgba(5, 85, 99, 0.822);
     display: flex;

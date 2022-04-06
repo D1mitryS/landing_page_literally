@@ -61,7 +61,6 @@ cite {
     width: 85%;
     display: flex;
     margin: 10% auto 10%;
-    /* margin-bottom не работает почему? */
     border-top: 0.2vh solid rgba(5, 85, 99, 0.822);
     border-bottom: 0.2vh solid rgba(5, 85, 99, 0.822);
 

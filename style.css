@@ -19,15 +19,14 @@ button {
 
 * {
     box-sizing: border-box;
-    /* max-width: 100%; */
-    /* overflow-x: hidden; */
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    /* max-width: 100%; */
-    /* overflow-x: hidden; */
-    /* max-width: 100%; */
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 cite {
@@ -136,6 +135,7 @@ cite {
 }
 
 .poll {
+    overflow-y: hidden;
     width: 85%;
     margin: 0 auto;
     font-size: 0;

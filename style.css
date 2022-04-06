@@ -150,7 +150,6 @@ cite {
     margin-right: 5%;
     padding: 5%;
     vertical-align: top;
-    /* margin-bottom: 20%; */
     border: 0.2vh solid rgba(5, 85, 99, 0.822);
     font-size: 3vh;
     line-height: 4vh;
@@ -224,9 +223,9 @@ cite {
     text-transform: uppercase;
     color: rgba(10, 73, 192, 0.952);
     margin: auto;
+    background-color: rgba(0, 0, 0, 0.658);
     width: 100%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.658);
 }
 
 .badending {

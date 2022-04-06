@@ -79,7 +79,7 @@ cite {
     line-height: 0;
 
     text-align: center;
-    /* !!! ALLIGNS LAST COLLUMNs TO THE CENTER !!!*/
+    /* !!! ALLIGNS LAST COLLUMN TO THE CENTER !!!*/
 }
 
 
@@ -91,7 +91,7 @@ cite {
     border: 0.2vh solid rgba(5, 85, 99, 0.822);
 
     vertical-align: top;
-    /* !!! ALIGNS COLUMN TO TOP !!!*/
+    /* !!! ALIGNS COLUMNs TO TOP !!!*/
 }
 
 .card.no-margin-right {
@@ -196,7 +196,7 @@ cite {
 }
 
 .ending {
-    margin: 25vh 0 0;
+    margin: 10% 0 0;
 }
 
 .goodending,

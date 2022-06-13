@@ -1,0 +1,255 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+
+.page-header {
+    height: 100vh;
+    background-color: aqua;
+    background-image: url(img/landing-background.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.page-header .overlay {
+    display: flex;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.page-header h1 {
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 4em;
+}
+
+section.how-to {
+    width: 90%;
+    margin: 0 auto 100px;
+    border-top: 2.5px solid rgba(5, 85, 99, 0.822);
+    border-bottom: 2.5px solid rgba(5, 85, 99, 0.822);
+}
+
+.how-to h2 {
+    text-align: center;
+    padding: 50px;
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+section.content {
+    width: 90%;
+    margin: 0 auto 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(543px, 1fr));
+    gap: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    box-shadow: 1px 1px 10px #000;
+    border-radius: 5px;
+}
+
+.card img {
+    order: -1;
+    margin-bottom: 50px;
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    align-self: center;
+    font-size: 1.5em;
+    border-bottom: #000 2px solid;
+}
+
+.card p {
+    margin-top: 50px;
+}
+
+.card blockquote {
+    margin-top: 50px;
+    padding: 0 50px;
+    font-size: .8em;
+    color: rgb(92, 92, 92);
+}
+
+.card blockquote cite {
+    text-decoration: underline solid rgb(92, 92, 92) 1px;
+}
+
+section.would-you {
+    width: 90%;
+    margin: 0 auto 100px;
+    border-top: 2.5px solid rgba(5, 85, 99, 0.822);
+    border-bottom: 2.5px solid rgba(5, 85, 99, 0.822);
+}
+
+.would-you h2 {
+    text-align: center;
+    padding: 50px;
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+section.poll {
+    width: 90%;
+    margin: 0 auto 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(543px, 1fr));
+    gap: 50px;
+    align-items: start;
+}
+
+.list {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    box-shadow: 1px 1px 10px #000;
+    border-radius: 5px;
+}
+
+.list:not(:nth-of-type(1)) {
+    display: none;
+}
+
+.list h3 {
+    align-self: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-bottom: 2px solid #000;
+    margin-bottom: 25px;
+}
+
+
+.list label {
+    padding: 10px;
+}
+
+.list button {
+    align-self: end;
+    min-width: 15%;
+    padding: 2.5px;
+    margin-top: 25px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    opacity: .7;
+}
+
+.list button:hover {
+    opacity: 1;
+}
+
+.result-link {
+    display: none;
+    margin-top: 25px;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.result-link:hover {
+    background-color: rgba(5, 85, 99, 0.822);
+    color: #fff;
+}
+
+.ending {
+    display: none;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #eee;
+}
+
+.ending.good-ending {
+    background-image: url(img/good-ending.jpg);
+    border-top: 2.5px solid rgba(5, 85, 99, 0.822);
+    border-bottom: 2.5px solid rgba(5, 85, 99, 0.822);
+}
+
+.ending.bad-ending {
+    background-image: url(img/bad-ending.jpg);
+    border-top: 2.5px solid rgba(146, 5, 5, 0.952);
+    border-bottom: 2.5px solid rgba(146, 5, 5, 0.952);
+}
+
+.ending .overlay {
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.ending h2 {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.good-ending h2 {
+    color: rgba(10, 73, 192, 0.952);
+    font-size: 4em;
+}
+
+.bad-ending h2 {
+    font-weight: bold;
+    font-size: 5em;
+    color: rgba(146, 5, 5, 0.952);
+}
+
+.page-footer {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2.5px solid #000;
+}
+
+.page-footer h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.retry-link {
+    display: none;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.retry-link:hover {
+    color: rgba(5, 85, 99, 0.822);
+}
